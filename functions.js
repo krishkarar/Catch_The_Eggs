@@ -24,6 +24,7 @@ function show_bulls_eye(egg) {
     hide_bulls_eye(bullseye_num);
 }
 
+
 function hide_bulls_eye(bullseye_num) {
     setTimeout(function () {
         $('#bullseye' + bullseye_num).hide();
@@ -59,7 +60,62 @@ function update_score() {
     }
     score_span.text(score);
     score_1.text(score);
+
+
+    // var currentBG = document.querySelector("#container");
+    // document.getElementById("container").classList.toggle("darkBG");
+
+
+
+
+      if(score>=10 && (score%10===0 && score%20!==0) ){
+        setTimeout(function(){
+          // activeButton.classList.remove("pressed");
+          document.querySelector("#container").classList.toggle("darkBG");
+        }, 500);
+        console.log(score);
+        // document.getElementById("container").classList.toggle("darkBG");
+        // currentBG.classList.toggle("darkBG");
+        // currentBG.classList.remove("lightBG");
+        // currentBG.classList.add("darkBG");
+      }
+
+      else if(score>10 && score%20===0){
+        setTimeout(function(){
+          // activeButton.classList.remove("pressed");
+          document.querySelector("#container").classList.toggle("darkBG");
+        }, 500);
+        console.log(score);
+        // document.getElementById("container").classList.toggle("darkBG");
+        // currentBG.classList.toggle("darkBG");
+        // currentBG.classList.remove("darkBG");
+        // currentBG.classList.add("lightBG");
+      }
+
+
+
 }
+
+// function changeBG(){
+//   var currentBG = document.querySelector("#container");
+//   if(score<10){
+//     currentBG.classlist.add("lightBG");
+//     console.log(score);
+//   }
+//
+//
+//   else{
+//     if(score%10===0 && score%20!==0){
+//       currentBG.classlist.remove("lightBG");
+//       currentBG.classlist.add("darkBG");
+//     }
+//
+//     else if(score%20===0){
+//       currentBG.classlist.remove("darkBG");
+//       currentBG.classlist.add("lightBG");
+//     }
+//   }
+// }
 
 function stop_the_game() {
     cancelAnimationFrame(anim_id);
