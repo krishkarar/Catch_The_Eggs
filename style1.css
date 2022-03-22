@@ -37,27 +37,6 @@ hr
 
 }
 
-.egg1
-{
-  background-color: white;
-  height: 30px;
-  width: 20px;
-  border: solid;
-  border-radius: 100%;
-  position: relative;
-  left: 240px;
-}
-
-.egg2
-{
-  background-color: white;
-  height: 30px;
-  width: 20px;
-  border: solid;
-  border-radius: 100%;
-  position: relative;
-  left: 1000px;
-}
 
 .boy
 {
@@ -67,14 +46,6 @@ hr
 }
 
 
-.girl
-{
-  position: relative;
-  left:730px;
-  width: 20%;
-  top: 40px;
-
-}
 
 .instructions
 {
@@ -97,7 +68,29 @@ body {
     font-family: sans-serif;
 }
 
-#container {
+.lightBG{
+  height: 90%;
+  width: 90%;
+  margin-left: 5%;
+  position: relative;
+  border: 1px solid red;
+  overflow: hidden;
+  background-color: #31b6ce;
+}
+
+.darkBG {
+  height: 90%;
+  width: 90%;
+  margin-left: 5%;
+  position: relative;
+  border: 1px solid red;
+  overflow: hidden;
+  background-color: black;
+}
+
+
+
+/* #container {
     height: 90%;
     width: 90%;
     margin-left: 5%;
@@ -105,7 +98,7 @@ body {
     border: 1px solid red;
     overflow: hidden;
     background-color: #31b6ce;
-}
+} */
 
 #score_help {
     text-align: center;
@@ -213,7 +206,7 @@ body {
 
 #score_1 {
     position: absolute;
-    color: #424242;
+    color: white;
     font-size: 30px;
     top: 45%;
     left: 30%;
